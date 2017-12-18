@@ -2,16 +2,18 @@ package alterg.mod1.performance;
 
 import lombok.Setter;
 
-import java.util.Collection;
+import java.util.Map;
 
 @Setter
 public class OneManBand implements Performer {
 
-    private Collection<Instrument> instruments;
+    private Map<String, Instrument> instruments;
+    private Object someNullProperty = new Object();
 
     public void perform() throws PerformanceException {
-        for (Instrument instrument : instruments) {
-            instrument.play();
+        for (String instrumentKey : instruments.keySet()) {
+            System.out.println("Instrument is " + instrumentKey);
+            instruments.get(instrumentKey).play();
         }
     }
 }
