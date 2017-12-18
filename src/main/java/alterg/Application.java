@@ -12,7 +12,9 @@ public class Application {
 
 //        Performer performer = (Performer) context.getBean("duke");
 //        performer.perform();
-        Performer performer = (Performer) context.getBean("kenny");
+//        Performer performer = (Performer) context.getBean("kenny");
+//        performer.perform();
+        Performer performer = (Performer) context.getBean("hank");
         performer.perform();
 
     }
