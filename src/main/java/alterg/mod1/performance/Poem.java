@@ -1,4 +1,4 @@
-package alterg.mod1.idol;
+package alterg.mod1.performance;
 
 public interface Poem {
 

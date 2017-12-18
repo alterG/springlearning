@@ -1,11 +1,11 @@
-package alterg.mod1.idol;
+package alterg.mod1.performance;
 
 public class Stage {
 
     private Stage() {
     }
 
-    public Stage getInstance() {
+    public static Stage getInstance() {
         return StageSingletonHolder.instance;
     }
 
